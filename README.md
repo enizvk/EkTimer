@@ -64,48 +64,6 @@ cd ektimer
 ./Scripts/create-dmg.sh
 ```
 
-## Project Structure
-
-```
-├── Package.swift                    # Swift Package Manager manifest
-├── Resources/
-│   ├── Info.plist                   # App bundle configuration
-│   ├── AppIcon.icns                 # App icon
-│   ├── icon_light.png               # Light mode icon
-│   └── icon_dark.png                # Dark mode icon
-├── Scripts/
-│   ├── build.sh                     # Build release .app bundle
-│   ├── run.sh                       # Build and launch
-│   └── create-dmg.sh               # Create DMG installer
-└── Sources/EKTimer/
-    ├── App/
-    │   ├── EKTimerApp.swift         # App entry point (MenuBarExtra)
-    │   └── AppDelegate.swift        # Notifications, Cmd+Q, right-click menu
-    ├── Models/
-    │   ├── TimerMode.swift          # Stopwatch / Timer enum
-    │   ├── TimerState.swift         # Idle / Running / Paused / Finished
-    │   ├── TimerColor.swift         # 9 color options
-    │   ├── TimerIcon.swift          # 20 icon options
-    │   ├── TimerPreset.swift        # Configurable presets
-    │   ├── NotificationStyle.swift  # Banner / Alert
-    │   └── NotificationSound.swift  # 12 macOS system sounds
-    ├── Services/
-    │   ├── TimerInstance.swift       # Core timing logic (date-based, drift-free)
-    │   ├── TimerManager.swift        # Collection manager
-    │   ├── NotificationService.swift # UNUserNotificationCenter + NSSound
-    │   └── LaunchAtLoginService.swift# SMAppService wrapper
-    └── Views/
-        ├── ContentView.swift         # Main panel with timer list
-        ├── MenuBarLabel.swift        # Colored icons + times in menu bar
-        ├── TimerRowView.swift        # Per-timer card with controls
-        ├── SettingsView.swift        # Settings panel
-        ├── PresetEditorView.swift    # Timer preset editor
-        └── Components/
-            ├── TimeDisplayView.swift       # Time display + editable time input
-            ├── ControlButtonsView.swift    # Start/Pause/Resume/Reset/Delete
-            └── AppIconView.swift           # Appearance-aware app icon
-```
-
 ## Tech Stack
 
 - **SwiftUI** with `MenuBarExtra` and `.menuBarExtraStyle(.window)`
