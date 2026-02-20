@@ -37,9 +37,7 @@ Timer presets editor:
 
 ![Timer presets editor](Screeshots/image-2.png)
 
-Menu bar:
 
-![Menu bar](Screeshots/image-3.png)
 
 
 ## Installation
