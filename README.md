@@ -6,6 +6,8 @@ A lightweight menu bar timer and stopwatch app for macOS.
 ![Swift 6](https://img.shields.io/badge/Swift-6-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+Download: https://github.com/user-attachments/files/25441202/EKTimer-1.0.0.dmg.zip
+
 ## Features
 
 - **Menu bar app** — lives in the status bar, no dock icon
